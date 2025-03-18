@@ -78,10 +78,23 @@ tujuan peramban web (Chrome, Edge, Firefox, Safari) adalah untuk membaca dokumen
 
 ## Struktur halaman HTML ##
 <kepala>
+ 
   <title> judul halaman </title> (akan ditampilkan di bilah judul browser)
+  
 </kepala>
+
 <tubuh>
+ 
     <h1> ini adalah judul</h1>
+    
     <p> ini adalah sebuah paragraf.</p>
+    
     <p> ini adalah paragraf lainnya</p>
+    
 </tubuh>
+
+**catatan**
+konten didalam bagian <body> akan ditampilkan di browser.
+
+konten di dalam elemen <title> akan ditampilkan di bilah judul browser atau di tab halaman. 
+
