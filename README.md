@@ -2664,3 +2664,192 @@ output
 
 # Peregangan Latar Belakang
 Atur properti ukuran latar belakang ke "100% 100%" dan gambar latar belakang akan diregangkan untuk menutupi seluruh elemen, dalam hal ini elemen badan.
+
+
+# Elemen Div HTML
+1. Untuk Kalimat dengan menggunakan <div>
+Untuk blok semua kalimat maka letakkan <div> sebelum menaruhkan elemen lainnya
+2. Untuk blok rata tengah maka atur margin properti CSS ke auto
+3. Untuk blok paragraf yang berbeda maka tambahkan beberapa <div> pada halaman yang sama.
+4. Untuk blok berdampingan pakai properti CSS <float> ini hasilnya akan mepet, jika ingin ada celah maka pakai in-line block.
+
+
+# Atribut Kelas HTML
+1. Atribut kelas digunakan untuk menunjuk ke nama kelas dalam style sheet.
+   
+2. Nama kelas peka pada huruf kecil dan besar
+   
+3. getElementsByClassName() digunakan JavaScript untuk mengakses elemen dengan nama kelas tertentu.
+
+# Atribut id HTML
+Digunakan untuk menentukan id unik untuk elemen HTML. Nama id peka dengan huruf kecil dan besar. Setidaknya atribut id mengandung satu karakter, tidak dapat dimulai dengan angka, dan tidak boleh spasi.
+
+1. Atribut id
+Nilai atribut id harus unik dalam dokumen HTML. Atribut ini iddigunakan untuk menunjuk ke deklarasi gaya tertentu dalam lembar gaya.
+2. Perbedaan antara kelas dan id
+Kelas bisa digunakan oleh beberapa elemen HTML sedangkan nama id hanya boleh digunakan oleh satu elemen HTML saja.
+3. Bookmark HTML dengan ID dan Tautan
+Untuk menggunakan bookmark, harus membuatnya terlebih dahulu, lalu menambahkan tautan ke dalamnya. Lalu, saat tautan diklik, halaman akan bergulir ke lokasi yang terdapat penanda halaman.
+4. Menggunakan atribut id di JavaScript
+JavaScript dapat mengakses elemen dengan id tertentu dengan getElementById().
+
+
+# Iframe HTML
+Digunakan untuk menampilkan halaman web di dalam halaman web. Sintaksisnya adalah sebagai berikut: <iframe src="url" title="description"></iframe>
+
+1. Mengatur tinggi dan lebar Iframe
+Gunakan atribut height dan width.
+2. Hapus batasan
+Dengan cara tambahkan style dan gunakan properti CSS border.
+3. Target untuk tautan
+Atribut targettautan harus merujuk ke nameatribut iframe.
+
+
+# Bahasa Pemogramana HTML dan JavaScript
+Ada 2 tag HTML yang digunakan yaitu:
+
+1. <script> untuk mendefinisikan skrip sisi klien (JavaScript)
+2. <nonscript> untuk mendefinisikan konten alternatif yang akan ditampilkan kepada pengguna yang telah menonaktifkan skrip di browser mereka.
+
+
+# Jalur Berkas HTML
+Jalur Berkas HTML Jalur berkas menggambarkan lokasi berkas dalam struktur folder situs web. Jalur berkas digunakan saat menautkan ke berkas eksternal, seperti:
+1. Halaman web
+2. Gambar
+3. Lembar gaya
+4. JavaScript dalam bahasa Inggris
+
+
+- Jalur File Absolut
+URL lengkap ke suatu berkas.
+
+- Jalur File Relatif
+Menunjuk ke berkas yang relatif terhadap halaman saat ini.
+
+# Kepala HTML
+- <head> : untuk metadata (data tentang data) diletakkan antara <html> dan <body>.
+- <title> : untuk menentukan judul dokumen.
+- <style> : untuk menentukan informasi gaya untuk satu halaman HTML.
+- <link> : untuk mendefinisikan hubungan antara dokumen saat ini dan sumber daya eksternal.
+- <meta> : untuk menentukan set karakter, deskripsi halaman, kata kunci, penulis dokumen, dan pengaturan viewport (area yang terlihat oleh pengguna di halaman web).
+- <script> : untuk mendefinisikan JavaScript sisi klien.
+- <base> : menentukan URL dasar dan/atau target untuk semua URL relatif di suatu halaman.
+
+
+# Tata Letak HTML
+<header> : Menentukan header untuk dokumen atau bagian
+<nav> : Menentukan sekumpulan tautan navigasi
+<section> : Menentukan bagian dalam dokumen
+<article> : Mendefinisikan konten yang independen dan mandiri
+<aside> : Mendefinisikan konten selain konten (seperti sidebar)
+<footer> : Menentukan footer untuk dokumen atau bagian
+<details> : Menentukan detail tambahan yang dapat dibuka dan ditutup oleh pengguna sesuai permintaan
+<summary> : Menentukan judul untuk <details> elemen
+ 
+Ada 4 teknik tata letak HTML
+
+1. Kerangka kerja CSS
+menggunakan kerangka kerja CSS, seperti W3.CSS atau Bootstrap .
+2. Properti float CSS
+3. Kotak fleksibel CSS
+memastikan bahwa elemen berperilaku sesuai prediksi saat tata letak halaman harus mengakomodasi berbagai ukuran layar dan perangkat tampilan yang berbeda.
+4. Jaringan CSS
+dengan baris dan kolom, sehingga memudahkan dalam mendesain halaman web tanpa harus menggunakan float dan pemosisian.
+
+
+
+# Desain Web Responsif HTML
+tentang penggunaan HTML dan CSS untuk secara otomatis mengubah ukuran, menyembunyikan, mengecilkan, atau memperbesar situs web, agar terlihat bagus di semua perangkat (desktop, tablet, dan ponsel).
+
+1. Mengatur viewport
+Dengan menambahkan <meta> ke semua halaman web.
+2. Gambar responsif
+gambar yang skalanya dapat disesuaikan dengan ukuran browser apa pun. Kalau pakai width maka bisa di zoom, sedangkan kalau pakai max-width maka tidak bisa dizoom besar dari ukuran aslinya.
+3. Menampilkan Gambar Berbeda Tergantung pada Lebar Browser
+<picture> untuk menentukan gambar yang berbeda untuk ukuran jendela browser yang berbeda.
+4. Ukuran Teks Responsif
+Ukuran teks dapat diatur dengan satuan "vw", yang berarti "lebar tampilan".
+
+
+
+# Kode Komputer HTML
+<kbd> : mendefinisikan input keyboard
+<samp> : mendefinisikan contoh keluaran dari program komputer
+<code> : mendefinisikan sepotong kode komputer
+<var> : mendefinisikan variabel dalam pemrograman atau dalam ekspresi matematika
+<pre> : endefinisikan teks yang telah diformat sebelumnya
+
+ 
+# Semantik HTML
+<article> : mendefinisikan konten independen dan mandiri
+<aside> : menentukan konten selain konten halaman
+<details> : menentukan detail tambahan yang dapat dilihat atau disembunyikan oleh pengguna
+<figcaption> : menentukan judul untuk elemen <figure>
+<figure> : menentukan konten mandiri, seperti ilustrasi, diagram, foto, daftar kode, dll.
+<footer> : menentukan footer untuk dokumen atau bagian
+<header> : menentukan header untuk dokumen atau bagian
+<main> : menentukan konetn utama suatu dokumen
+<mark> : menentukan teks yang ditandai/disorot
+<nav> : mendefinisikan tautan navigasi
+<section> : menentukan bagian dalam dokumen
+<summary> : menentukan judul yang terlihat untuk elemen <details>
+<time> : menentukan tanggal/waktu
+
+ 
+ # Panduan Gaya HTML
+Deklarasi Tipe Dokumen: Selalu mulai dokumen HTML dengan deklarasi tipe dokumen <!DOCTYPE html> untuk memastikan browser mengenali versi HTML yang digunakan.
+Penggunaan Huruf Kecil untuk Nama Elemen: Meskipun HTML tidak peka huruf besar-kecil, disarankan menggunakan huruf kecil untuk nama elemen agar konsisten dan mudah dibaca.
+Penutupan Semua Elemen HTML: Meskipun beberapa elemen HTML tidak wajib ditutup, sebaiknya tetap menutup semua elemen untuk menjaga struktur kode yang rapi dan mencegah kesalahan.
+Penggunaan Huruf Kecil untuk Nama Atribut: Seperti nama elemen, disarankan menggunakan huruf kecil untuk nama atribut demi konsistensi dan kemudahan pembacaan.
+Penggunaan Tanda Kutip untuk Nilai Atribut: Meskipun HTML mengizinkan nilai atribut tanpa tanda kutip, praktik terbaiknya adalah selalu menggunakan tanda kutip untuk menghindari potensi kesalahan.
+Inden dan Spasi: Gunakan indentasi dan spasi yang konsisten untuk membuat kode lebih mudah dibaca dan dipahami oleh pengembang lain.
+Entitas HTML
+Entitas Karakter HTML
+Beberapa karakter seperti <, >, dan & punya makna khusus di HTML, jadi perlu ditulis dalam bentuk entitas agar tidak dianggap sebagai kode.
+Ruang tanpa putus
+Spasi yang tidak akan terputus menjadi baris baru. Tanda hubung tidak putus ( ‑ ) digunakan untuk menentukan karakter tanda hubung (‑) yang tidak putus pada baris baru.
+image image
+Simbol HTML
+image image image
+Emoji HTML
+Emoji terlihat seperti gambar atau ikon, tetapi sebenarnya tidak. Itu adalah huruf (karakter) dari set karakter UTF-8 (Unicode).
+
+<meta> untuk mengetahui set karakter yang digunakan pada halaman tersebut.
+Karakter UTF-8, tidak dapat diketikan pada keyboard tapi bisa dapat ditampilkan menggunakan angka(entitas).
+Karakter emoji, emoji juga merupakan karakter dari alfabet UTF-8. contoh:
+😄 is 128516 😍 is 128525 💗 is 128151
+Pengkodean HTML (Kumpulan Karakter)
+Set Karakter ASCII
+ASCII merupakan standar pengkodean karakter pertama untuk web. Standar ini mendefinisikan 128 karakter berbeda yang dapat digunakan di internet:
+Huruf bahasa Inggris (AZ)
+Angka (0-9)
+Karakter khusus seperti !$ + - ( ) @ < >.
+Set Karakter ANSI
+ANSI (Windows-1252) adalah set karakter Windows asli:
+Identik dengan ASCII untuk 127 karakter pertama
+Karakter khusus dari 128 hingga 159
+Identik dengan UTF-8 dari 160 hingga 255
+Set Karakter ISO-8859-1
+ISO-8859-1 merupakan set karakter default untuk HTML 4. Set karakter ini mendukung 256 kode karakter yang berbeda. HTML 4 juga mendukung UTF-8.
+Identik dengan ASCII untuk 127 karakter pertama
+Tidak menggunakan karakter 128 sampai 159
+Identik dengan ANSI dan UTF-8 dari 160 hingga 255
+Kode URL (alamat web)
+URL - Pencari Sumber Daya Seragam
+skema : mendefinisikan jenis layanan Internet (yang paling umum adalah http atau https )
+awalan : mendefinisikan awalan domain (default untuk http adalah www )
+domain : mendefinisikan nama domain Internet (seperti w3schools.com)
+port : menentukan nomor port pada host (default untuk http adalah 80 )
+path : menentukan jalur di server (Jika dihilangkan: direktori root situs)
+nama file : menentukan nama dokumen atau sumber daya
+Skema URL Umum
+http (HyperText Transfer Protocol) : Halaman web umum. Tidak dienkripsi
+https (Secure HyperText Transfer Protocol) :halaman web aman. dienkripsi
+ftp (File Transfer Protocol) : download atau upload file
+file : file di komputer
+Pengkodean URL
+Pengkodean URL mengganti karakter non-ASCII dengan "%" diikuti oleh digit heksadesimal. URL tidak boleh mengandung spasi. Pengkodean URL biasanya mengganti spasi dengan tanda tambah (+), atau %20.
+
+ 
+ # Perbedaan antara HTML dan XHTML
+XHTML cocok kalau butuh kode yang lebih rapi dan standar, tapi HTML lebih fleksibel
