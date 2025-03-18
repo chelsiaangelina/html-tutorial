@@ -13,26 +13,40 @@ dengan html kita dapat mebuat web kita sendiri
 
 </body>
 </html>
-
+ output yang dihasilkan
+ 
+**This is a heading**
+ (ini dikarenakan h1 berfungsi sebagai pembuat judul)
+This is a paragraph.
 
 # html introduction 
 **apa itu HTML?**
 HTML adalah singkatan dari Hyper Teks Markup Language
+
 HTML adalah bahasa markup standar untuk membuat halaman web
+
 HTML menggambarkan struktur halaman web
+
 HTML terdiri dari serangkaian elemen
+
 elemen HTML memberi tahu browser cara menampilkan konten
+
 elemen HTML memberi tahu label pada bagian konten seperti " ini adalah judul", "ini adalah paragraf", "ini adalah tautan", dan lain-lain. 
 
 ## Dokumen HTML sederhana ##
 contoh:
 <!DOCTYPE html mendefinisikan bahwa dokumn ini adalah dokumen HTML5
+
 <html> adalah elemn akar halaman dari HTML
+
 <head> berisi informasi meta tentang halaman HTML
+  
 <title>Page Title</title> menentukan jududl untuk halaman HTML (yang ditampilkan di bilah jududl browser atau di tab tambahan)
+
 </head> berisi tentang informasi meta tentang halaman HTML
 
 <h1>This is a Heading</h1> mendefinisikan judul besar
+
 <p>This is a paragraf.</p> mendefinisikan sebuah paragraf
 
 </body>
