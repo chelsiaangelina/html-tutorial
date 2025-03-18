@@ -55,14 +55,11 @@ contoh:
 ## apa itu elemen HTML ##
 elemen HTML adalah segalanya dari tag awal hingga tag akhir
 
-<h1> jududl pertama </h1>
-
+<h1> judul pertama </h1>
 <p> paragraf pertama </p>
 
 artinya 
-
 Start tag                    Elemen contect                End tag
-
 <h1>                         My Firsh Heading               </h1>
 
 <p>                          My firsh Paragraf              </P>
