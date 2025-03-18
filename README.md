@@ -2140,3 +2140,846 @@ a:hover, a:active {
   background-color: red;
 }
 </style>
+Tautan HTML - Buat Bookmark
+Tautan HTML dapat digunakan untuk membuat penanda halaman, sehingga pembaca dapat melompat ke bagian tertentu pada halaman web.
+
+Membuat Bookmark dalam HTML
+Bookmark dapat berguna jika halaman web sangat panjang.
+
+Untuk membuat penanda buku - pertama buat penanda buku, lalu tambahkan tautan ke dalamnya.
+
+Ketika tautan diklik, halaman akan bergulir ke bawah atau ke atas ke lokasi yang terdapat penanda halaman.
+
+Contoh
+Pertama, gunakan idatribut untuk membuat bookmark:
+
+<h2 id="C4">Chapter 4</h2>
+Kemudian, tambahkan tautan ke penanda buku ("Lompat ke Bab 4"), dari dalam halaman yang sama:
+
+Contoh
+<a href="#C4">Jump to Chapter 4</a>
+Gambar HTML
+Gambar dapat meningkatkan desain dan tampilan halaman web.
+
+Contoh
+<img src="pic_trulli.jpg" alt="Italian Trulli">
+Contoh
+<img src="img_girl.jpg" alt="Girl in a jacket">
+Contoh
+<img src="img_chania.jpg" alt="Flowers in Chania">
+Sintaksis Gambar HTML
+Tag HTML <img>digunakan untuk menanamkan gambar di halaman web.
+
+Secara teknis, gambar tidak dimasukkan ke dalam halaman web; gambar ditautkan ke halaman web. <img>Tag tersebut menciptakan ruang penyimpanan untuk gambar yang dirujuk.
+
+Tag tersebut <img>kosong, hanya berisi atribut dan tidak memiliki tag penutup.
+
+Tag <img>memiliki dua atribut yang diperlukan:
+
+src - Menentukan jalur ke gambar
+alt - Menentukan teks alternatif untuk gambar
+Sintaksis
+<img src="url" alt="alternatetext">
+Atribut src
+Atribut yang diperlukan srcmenentukan jalur (URL) ke gambar.
+
+Catatan: Saat halaman web dimuat, pada saat itulah browser mengambil gambar dari server web dan memasukkannya ke dalam halaman. Oleh karena itu, pastikan gambar benar-benar berada di tempat yang sama dalam kaitannya dengan halaman web, jika tidak, pengunjung Anda akan mendapatkan ikon tautan rusak. Ikon tautan rusak dan altteks akan ditampilkan jika browser tidak dapat menemukan gambar tersebut.
+
+Contoh
+<img src="img_chania.jpg" alt="Flowers in Chania">
+
+Atribut alt
+Atribut yang diperlukan altmenyediakan teks alternatif untuk gambar, jika pengguna karena alasan tertentu tidak dapat melihatnya (karena koneksi yang lambat, kesalahan pada atribut src, atau jika pengguna menggunakan pembaca layar).
+
+Nilai altatribut harus menjelaskan gambar:
+
+Contoh
+<img src="img_chania.jpg" alt="Flowers in Chania">
+Jika browser tidak dapat menemukan gambar, maka browser akan menampilkan nilai alt atribut:
+
+Contoh
+<img src="wrongname.gif" alt="Flowers in Chania">
+Kiat: Pembaca layar adalah program perangkat lunak yang membaca kode HTML, dan memungkinkan pengguna untuk "mendengarkan" kontennya. Pembaca layar berguna bagi orang-orang yang memiliki gangguan penglihatan atau kesulitan belajar.
+
+Ukuran Gambar - Lebar dan Tinggi
+Anda dapat menggunakan styleatribut untuk menentukan lebar dan tinggi gambar.
+
+Contoh
+<img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+Sebagai alternatif, Anda dapat menggunakan atribut widthdan height:
+
+Contoh
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+Atribut widthdan heightselalu menentukan lebar dan tinggi gambar dalam piksel.
+
+Catatan: Selalu tentukan lebar dan tinggi gambar. Jika lebar dan tinggi tidak ditentukan, halaman web mungkin berkedip saat gambar dimuat.
+
+Lebar dan Tinggi, atau Gaya?
+Atribut width, height, dan stylesemuanya valid dalam HTML.
+
+Namun, kami sarankan untuk menggunakan styleatribut ini. Atribut ini mencegah lembar gaya mengubah ukuran gambar:
+
+Contoh
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  width: 100%;
+}
+</style>
+</head>
+<body>
+
+<img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+
+<img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+</body>
+</html>
+Gambar di Folder Lain
+Jika Anda memiliki gambar di sub-folder, Anda harus menyertakan nama folder dalam srcatribut:
+
+Contoh
+<img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+Gambar di Server/Situs Web Lain
+Beberapa situs web menunjuk ke gambar di server lain.
+
+Untuk menunjuk ke gambar di server lain, Anda harus menentukan URL absolut (lengkap) dalam srcatribut:
+
+Contoh
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+Catatan tentang gambar eksternal: Gambar eksternal mungkin memiliki hak cipta. Jika Anda tidak memperoleh izin untuk menggunakannya, Anda mungkin melanggar undang-undang hak cipta. Selain itu, Anda tidak dapat mengontrol gambar eksternal; gambar tersebut dapat dihapus atau diubah secara tiba-tiba.
+
+Gambar Animasi
+HTML memperbolehkan GIF animasi:
+
+Contoh
+<img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+Gambar sebagai Tautan
+Untuk menggunakan gambar sebagai tautan, letakkan <img>tag di dalam <a> tag:
+
+Contoh
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+Gambar Mengambang
+Gunakan properti CSS floatuntuk membiarkan gambar melayang ke kanan atau ke kiri teks:
+
+Contoh
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+The image will float to the right of the text.</p>
+
+<p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+The image will float to the left of the text.</p>
+Peta Gambar HTML
+Dengan peta gambar HTML, Anda dapat membuat area yang dapat diklik pada gambar.
+
+Peta Gambar
+Tag HTML <map>mendefinisikan peta gambar. Peta gambar adalah gambar dengan area yang dapat diklik. Area tersebut didefinisikan dengan satu atau beberapa <area>tag.
+
+Cobalah klik komputer, telepon, atau cangkir kopi pada gambar di bawah ini:
+
+Tempat kerja
+Contoh
+Berikut adalah kode sumber HTML untuk peta gambar di atas:
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+Bagaimana cara kerjanya?
+Ide di balik peta gambar adalah Anda harus dapat melakukan tindakan yang berbeda-beda, tergantung pada bagian gambar mana yang Anda klik.
+
+Untuk membuat peta gambar, Anda memerlukan gambar dan beberapa kode HTML yang menjelaskan area yang dapat diklik.
+
+IKLAN
+
+Gambar
+Gambar disisipkan menggunakan <img>tag. Satu-satunya perbedaan dari gambar lain adalah Anda harus menambahkan usemapatribut:
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+Nilai usemapdiawali dengan tagar #diikuti dengan nama peta gambar, dan digunakan untuk membuat hubungan antara gambar dan peta gambar.
+
+Tips: Anda dapat menggunakan gambar apa pun sebagai peta gambar!
+
+Buat Peta Gambar
+Lalu, tambahkan <map>elemen.
+
+Elemen ini <map>digunakan untuk membuat peta gambar, dan ditautkan ke gambar dengan menggunakan name atribut yang diperlukan:
+
+<map name="workmap">
+Atribut nameharus memiliki nilai yang sama dengan atribut <img>'s usemap.
+
+Daerah
+Lalu, tambahkan area yang dapat diklik.
+
+Area yang dapat diklik didefinisikan menggunakan <area>elemen.
+
+Membentuk
+Anda harus menentukan bentuk area yang dapat diklik, dan Anda dapat memilih salah satu nilai berikut:
+
+rect- mendefinisikan wilayah persegi panjang
+circle- mendefinisikan wilayah melingkar
+poly- mendefinisikan wilayah poligonal
+default- mendefinisikan seluruh wilayah
+Anda juga harus menentukan beberapa koordinat untuk dapat menempatkan area yang dapat diklik pada gambar. 
+
+Bentuk="persegi panjang"
+Koordinat shape="rect"datang berpasangan, satu untuk sumbu x dan satu untuk sumbu y.
+
+Jadi, koordinatnya 34,44terletak 34 piksel dari margin kiri dan 44 piksel dari atas:
+
+Tempat kerja
+Koordinat 270,350terletak 270 piksel dari margin kiri dan 350 piksel dari atas:
+
+Tempat kerja
+Sekarang kita memiliki cukup data untuk membuat area persegi panjang yang dapat diklik:
+
+Contoh
+<area shape="rect" coords="34, 44, 270, 350" href="computer.htm">
+Ini adalah area yang dapat diklik dan akan mengarahkan pengguna ke halaman "computer.htm":
+
+Tempat kerja
+Bentuk="lingkaran"
+Untuk menambahkan area lingkaran, pertama-tama cari koordinat pusat lingkaran:
+
+337,300
+
+Tempat kerja
+Kemudian tentukan jari-jari lingkaran:
+
+44piksel
+
+Tempat kerja
+Sekarang Anda memiliki cukup data untuk membuat area melingkar yang dapat diklik:
+
+Contoh
+<area shape="circle" coords="337, 300, 44" href="coffee.htm">
+Ini adalah area yang dapat diklik dan akan mengarahkan pengguna ke halaman "coffee.htm":
+
+Tempat kerja
+Bentuk="poli"
+Berisi shape="poly"beberapa titik koordinat, yang menciptakan bentuk yang dibentuk dengan garis lurus (poligon).
+
+Ini dapat digunakan untuk membuat bentuk apa pun.
+
+Mungkin seperti bentuk croissant!
+
+Bagaimana kita bisa membuat croissant pada gambar di bawah menjadi tautan yang dapat diklik?
+
+Makanan Perancis
+Kita harus menemukan koordinat x dan y untuk semua sisi croissant:
+
+Makanan Perancis
+Koordinat datang berpasangan, satu untuk sumbu x dan satu untuk sumbu y:
+
+Contoh
+<area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="croissant.htm">
+Ini adalah area yang dapat diklik dan akan mengarahkan pengguna ke halaman "croissant.htm":
+
+Makanan Perancis
+Peta Gambar dan JavaScript
+Area yang dapat diklik juga dapat memicu fungsi JavaScript.
+
+Tambahkan clickperistiwa ke <area>elemen untuk menjalankan fungsi JavaScript:
+
+Contoh
+Di sini, kami menggunakan atribut onclick untuk menjalankan fungsi JavaScript saat area diklik:
+
+<map name="workmap">
+  <area shape="circle" coords="337,300,44" href="coffee.htm" onclick="myFunction()">
+</map>
+
+<script>
+function myFunction() {
+  alert("You clicked the coffee cup!");
+}
+</script>
+Gambar Latar Belakang HTML
+Gambar latar belakang dapat ditentukan untuk hampir semua elemen HTML.
+
+Gambar Latar Belakang pada elemen HTML
+Untuk menambahkan gambar latar belakang pada elemen HTML, gunakan styleatribut HTML dan properti CSS background-image:
+
+Contoh
+Tambahkan gambar latar belakang pada elemen HTML:
+
+<p style="background-image: url('img_girl.jpg');">
+Anda juga dapat menentukan gambar latar belakang dalam <style> elemen, di <head> bagian:
+
+Contoh
+Tentukan gambar latar belakang dalam <style> elemen:
+
+<style>
+p {
+  background-image: url('img_girl.jpg');
+}
+</style>
+Gambar Latar Belakang pada Halaman
+Jika Anda ingin seluruh halaman memiliki gambar latar belakang, Anda harus menentukan gambar latar belakang pada <body>elemen:
+
+Contoh
+Tambahkan gambar latar belakang untuk seluruh halaman:
+
+<style>
+body {
+  background-image: url('img_girl.jpg');
+}
+</style>
+Latar Belakang Ulangi
+Jika gambar latar belakang lebih kecil dari elemen, gambar akan berulang, secara horizontal dan vertikal, hingga mencapai akhir elemen:
+
+Contoh
+<style>
+body {
+  background-image: url('example_img_girl.jpg');
+}
+</style>
+Untuk mencegah gambar latar belakang terulang kembali, atur background-repeatproperti ke no-repeat.
+
+Contoh
+<style>
+body {
+  background-image: url('example_img_girl.jpg');
+  background-repeat: no-repeat;
+}
+</style>
+IKLAN
+
+Sampul Latar Belakang
+Jika Anda ingin gambar latar belakang menutupi seluruh elemen, Anda dapat mengatur background-sizeproperti ke cover.
+
+Selain itu, untuk memastikan seluruh elemen selalu tercakup, atur background-attachmentproperti kefixed:
+
+Dengan cara ini, gambar latar belakang akan menutupi seluruh elemen, tanpa peregangan (gambar akan mempertahankan proporsi aslinya):
+
+Contoh
+<style>
+body {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+Peregangan Latar Belakang
+Jika Anda ingin gambar latar belakang meregang agar sesuai dengan seluruh elemen, Anda dapat mengatur background-sizeproperti menjadi 100% 100%:
+
+Coba ubah ukuran jendela browser, dan Anda akan melihat bahwa gambar akan meregang, tetapi selalu menutupi seluruh elemen.
+
+Contoh
+<style>
+body {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+Elemen HTML <picture>memungkinkan Anda menampilkan gambar yang berbeda untuk perangkat atau ukuran layar yang berbeda.
+
+
+Elemen HTML <gambar>
+Elemen HTML <picture>memberi pengembang web lebih banyak fleksibilitas dalam menentukan sumber daya gambar.
+
+Elemen tersebut <picture>berisi satu atau beberapa <source>elemen, yang masing-masing merujuk ke gambar yang berbeda melalui srcset atribut. Dengan cara ini, browser dapat memilih gambar yang paling sesuai dengan tampilan dan/atau perangkat saat ini.
+
+Setiap <source>elemen memiliki mediaatribut yang menentukan kapan gambar paling cocok.
+
+Contoh
+Menampilkan gambar yang berbeda untuk ukuran layar yang berbeda:
+
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg">
+</picture>
+Catatan: Selalu tentukan <img>elemen sebagai elemen anak terakhir dari <picture>elemen tersebut. <img>Elemen tersebut digunakan oleh browser yang tidak mendukung <picture>elemen tersebut, atau jika tidak ada <source>tag yang cocok.
+
+IKLAN
+
+Kapan Menggunakan Elemen Gambar
+Ada dua tujuan utama untuk <picture>elemen ini:
+
+1. Lebar pita
+Jika Anda memiliki layar atau perangkat kecil, tidak perlu memuat berkas gambar berukuran besar. Peramban akan menggunakan <source> elemen pertama dengan nilai atribut yang sesuai, dan mengabaikan elemen berikut.
+
+2. Dukungan Format
+Beberapa browser atau perangkat mungkin tidak mendukung semua format gambar. Dengan menggunakan <picture>elemen tersebut, Anda dapat menambahkan gambar dari semua format, dan browser akan menggunakan format pertama yang dikenalinya, dan mengabaikan salah satu elemen berikut.
+
+Contoh
+Peramban akan menggunakan format gambar pertama yang dikenalinya:
+
+<picture>
+  <source srcset="img_avatar.png">
+  <source srcset="img_girl.jpg">
+  <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+</picture>
+Ikon HTML
+Favicon adalah gambar kecil yang ditampilkan di samping judul halaman di tab browser.
+
+Cara Menambahkan Favicon di HTML
+Anda dapat menggunakan gambar apa pun yang Anda suka sebagai favicon. Anda juga dapat membuat favicon sendiri di situs seperti https://www.favicon.cc .
+
+Tips: Favicon adalah gambar kecil, jadi harus berupa gambar sederhana dengan kontras tinggi.
+
+Gambar favicon ditampilkan di sebelah kiri judul halaman di tab browser, seperti ini:
+
+Contoh favicon
+Untuk menambahkan favicon ke situs web Anda, simpan gambar favicon Anda ke direktori akar server web Anda, atau buat folder di direktori akar yang disebut gambar, dan simpan gambar favicon Anda di folder ini. Nama umum untuk gambar favicon adalah "favicon.ico".
+
+Selanjutnya, tambahkan <link>elemen ke file "index.html" Anda, setelah <title>elemen, seperti ini:
+
+Contoh
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Page Title</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+Judul Halaman HTML
+Setiap halaman web harus memiliki judul halaman untuk menggambarkan arti halaman tersebut.
+
+Elemen Judul
+Elemen ini <title>menambahkan judul ke halaman Anda:
+
+Contoh
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Tutorial</title>
+</head>
+<body>
+
+The content of the document......
+
+</body>
+</html>
+Tabel HTML
+Tabel HTML memungkinkan pengembang web untuk mengatur data ke dalam baris dan kolom.
+
+Contoh
+Company	Contact	Country
+Alfreds Futterkiste	Maria Anders	Germany
+Centro comercial Moctezuma	Francisco Chang	Mexico
+Ernst Handel	Roland Mendel	Austria
+Island Trading	Helen Bennett	UK
+Laughing Bacchus Winecellars	Yoshi Tannamuri	Canada
+Magazzini Alimentari Riuniti	Giovanni Rovelli	Italy
+Tentukan Tabel HTML
+Tabel dalam HTML terdiri dari sel-sel tabel di dalam baris dan kolom.
+
+Contoh
+Tabel HTML sederhana:
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+Sel Tabel
+Setiap sel tabel didefinisikan oleh tag a <td>dan a </td>.
+
+td singkatan dari data tabel.
+
+Segala sesuatu antara <td>dan </td> merupakan konten sel tabel.
+
+Contoh
+<table>
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+</table>
+Catatan: Sel tabel dapat berisi semua jenis elemen HTML: teks, gambar, daftar, tautan, tabel lain, dll.
+
+IKLAN
+
+Baris Tabel
+Setiap baris tabel dimulai dengan <tr>dan diakhiri dengan </tr>tag.
+
+tr singkatan dari baris tabel.
+
+Contoh
+<table>
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+</table>
+Anda dapat memiliki baris sebanyak yang Anda suka dalam sebuah tabel; pastikan saja jumlah selnya sama di setiap baris.
+
+Catatan: Ada kalanya baris dapat memiliki lebih sedikit atau lebih banyak sel daripada baris lainnya. Anda akan mempelajarinya di bab berikutnya.
+
+Judul Tabel
+Terkadang Anda ingin sel Anda menjadi sel tajuk tabel. Dalam kasus tersebut, gunakan <th>tag sebagai ganti <td>tag:
+
+th singkatan dari table header.
+
+Contoh
+Biarkan baris pertama menjadi sel tajuk tabel:
+
+<table>
+  <tr>
+    <th>Person 1</th>
+    <th>Person 2</th>
+    <th>Person 3</th>
+  </tr>
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+</table>
+Batas Tabel HTML
+Tabel HTML dapat memiliki batas dengan berbagai gaya dan bentuk.
+
+Cara Menambahkan Batas
+Untuk menambahkan batas, gunakan borderproperti CSS pada elemen table, th, dan td:
+
+ 	 	 
+ 	 	 
+ 	 	 
+Contoh
+table, th, td {
+  border: 1px solid black;
+}
+Batas Tabel yang Dilipat
+Untuk menghindari batas ganda seperti pada contoh di atas, atur border-collapse properti CSS ke collapse.
+
+Ini akan membuat batas-batas tersebut runtuh menjadi satu batas tunggal:
+
+ 	 	 
+ 	 	 
+ 	 	 
+Contoh
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+IKLAN
+
+Gaya Batas Tabel
+Jika Anda menetapkan warna latar belakang setiap sel, dan memberi warna putih pada batasnya (sama dengan latar belakang dokumen), Anda akan mendapatkan kesan batas yang tidak terlihat:
+
+ 	 	 
+ 	 	 
+ 	 	 
+Contoh
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+}
+Batas Meja Bundar
+Dengan border-radiusproperti tersebut, batas-batasnya mendapatkan sudut yang membulat:
+
+ 	 	 
+ 	 	 
+ 	 	 
+Contoh
+table, th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+Lewati batas di sekitar tabel dengan tidak menyertakannya tablepada pemilih css:
+
+ 	 	 
+ 	 	 
+ 	 	 
+Contoh
+th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+Batas Meja Bertitik
+Dengan border-styleproperti tersebut, Anda dapat mengatur tampilan perbatasan.
+
+ 	 	 
+ 	 	 
+ 	 	 
+Nilai-nilai berikut diizinkan:
+
+dotted     
+dashed     
+solid     
+double     
+groove     
+ridge     
+inset     
+outset     
+none     
+hidden     
+Contoh
+ th, td {
+  border-style: dotted;
+}
+Warna Batas
+Dengan border-colorproperti tersebut, Anda dapat mengatur warna batas.
+
+ 	 	 
+ 	 	 
+ 	 	 
+Contoh
+ th, td {
+  border-color: #96D4D4;
+}
+
+Ukuran Tabel HTML
+Tabel HTML dapat memiliki ukuran yang berbeda untuk setiap kolom, baris, atau keseluruhan tabel.
+
+ 	 	 
+ 	 	 
+ 	 	 
+ 	 	 
+ 	 	 
+ 	 	 
+ 	 	 
+ 	 	 
+Gunakan styleatribut dengan properti widthatau height untuk menentukan ukuran tabel, baris, atau kolom.
+
+Lebar Tabel HTML
+Untuk mengatur lebar tabel, tambahkan style atribut ke <table>elemen:
+
+Contoh
+Atur lebar tabel menjadi 100%:
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+Catatan: Menggunakan persentase sebagai satuan ukuran lebar berarti seberapa lebar elemen ini jika dibandingkan dengan elemen induknya, yang dalam kasus ini adalah <body> elemen tersebut.
+
+Lebar Kolom Tabel HTML
+ 	 	 
+ 	 	 
+ 	 	 
+Untuk mengatur ukuran kolom tertentu, tambahkan style atribut pada elemen <th>atau <td>:
+
+Contoh
+Atur lebar kolom pertama menjadi 70%:
+
+<table style="width:100%">
+  <tr>
+    <th style="width:70%">Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+IKLAN
+
+Tinggi Baris Tabel HTML
+ 	 	 
+ 	 	 
+ 	 	 
+Untuk mengatur tinggi baris tertentu, tambahkan style atribut pada elemen baris tabel:
+
+Contoh
+Atur tinggi baris kedua menjadi 200 piksel:
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr style="height:200px">
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+
+Header Tabel HTML
+Tabel HTML dapat memiliki tajuk untuk setiap kolom atau baris, atau untuk banyak kolom/baris.
+
+Bahasa Indonesia: EMIL	TOBIAS	Bahasa Indonesia: LINUS
+ 	 	 
+ 	 	 
+ 	 	 
+ 	 	 
+ 	 	 
+SENIN	SELASA	MENIKAHI	KAMIS	JUMAT
+Jam 8:00	 	 	 	 	 
+Jam 09.00	 	 	 	 	 
+Jam 10.00	 	 	 	 	 
+Jam 11.00	 	 	 	 	 
+Jam 12.00	 	 	 	 	 
+Header Tabel HTML
+Header tabel didefinisikan dengan thelemen. Setiap thelemen mewakili sel tabel.
+
+Contoh
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+Header Tabel Vertikal
+Untuk menggunakan kolom pertama sebagai tajuk tabel, tentukan sel pertama di setiap baris sebagai <th>elemen:
+
+Contoh
+<table>
+  <tr>
+    <th>Firstname</th>
+    <td>Jill</td>
+    <td>Eve</td>
+  </tr>
+  <tr>
+    <th>Lastname</th>
+    <td>Smith</td>
+    <td>Jackson</td>
+  </tr>
+  <tr>
+    <th>Age</th>
+    <td>94</td>
+    <td>50</td>
+  </tr>
+</table>
+
+Sejajarkan Header Tabel
+Secara default, tajuk tabel dicetak tebal dan di tengah:
+
+Nama Depan	Nama belakang	Usia
+Jill	Tukang besi	50
+Malam	Jackson	94
+Untuk meratakan tajuk tabel ke kiri, gunakan text-alignproperti CSS:
+
+Contoh
+th {
+  text-align: left;
+}
+Header untuk Beberapa Kolom
+Anda dapat memiliki tajuk yang mencakup dua kolom atau lebih.
+
+Nama	Usia
+Jill	Tukang besi	50
+Malam	Jackson	94
+Untuk melakukan ini, gunakan colspanatribut pada <th>elemen:
+
+Contoh
+<table>
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+Anda akan mempelajari lebih lanjut tentang colspan dan rowspan dalam bab Tabel colspan & rowspan .
+
+Judul Tabel
+Anda dapat menambahkan keterangan yang berfungsi sebagai tajuk untuk keseluruhan tabel.
+
+Tabungan bulanan
+Bulan	Tabungan
+Januari	Rp. 100.000
+Februari	Rp 50.000
+Untuk menambahkan judul pada tabel, gunakan <caption>tag:
+
+Contoh
+<table style="width:100%">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+
+
+
+
+
