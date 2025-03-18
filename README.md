@@ -3,16 +3,23 @@ html adalah bahasa markup standar untuk halaman web
 dengan html kita dapat mebuat web kita sendiri
 **contoh**
 <!DOCTYPE html
+
 <html>
+
 <head>
+ 
 <title>Page Title</title>
+
 </head>
 
 <h1>This is a Heading</h1>
+
 <p>This is a paragraf.</p>
 
 </body>
+
 </html>
+
  output yang dihasilkan
  
 **This is a heading**
