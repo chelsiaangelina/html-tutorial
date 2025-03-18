@@ -2020,10 +2020,10 @@ This example links to a page located in the same folder as the current page:
 HTML tutorial
 
 
-Tautan HTML - Berbagai Warna
+# Tautan HTML - Berbagai Warna
 Tautan HTML ditampilkan dalam warna berbeda tergantung pada apakah tautan tersebut telah dikunjungi, belum dikunjungi, atau aktif.
 
-Warna Tautan HTML
+# warna Tautan HTML
 Secara default, tautan akan muncul seperti ini (di semua browser):
 
 Tautan yang belum dikunjungi diberi garis bawah dan berwarna biru
@@ -2059,9 +2059,15 @@ a:active {
   text-decoration: underline;
 }
 </style>
-IKLAN
 
-Tombol Tautan
+output
+
+# Link Colors
+You can change the default colors of links
+
+HTML Images 
+
+# Tombol Tautan
 Sebuah tautan juga dapat diberi gaya seperti tombol, dengan menggunakan CSS:
 
 Ini adalah tautannya
@@ -2080,63 +2086,10 @@ a:hover, a:active {
   background-color: red;
 }
 </style>  
-Tautan HTML - Berbagai Warna
-Tautan HTML ditampilkan dalam warna berbeda tergantung pada apakah tautan tersebut telah dikunjungi, belum dikunjungi, atau aktif.
 
-Warna Tautan HTML
-Secara default, tautan akan muncul seperti ini (di semua browser):
+output
+Link Button
+A link styled as a button:
 
-Tautan yang belum dikunjungi diberi garis bawah dan berwarna biru
-Tautan yang telah dikunjungi digarisbawahi dan berwarna ungu
-Tautan aktif digaris bawahi dan berwarna merah
-Anda dapat mengubah warna status tautan dengan menggunakan CSS:
+This is a link ( bentuk table)
 
-Contoh
-Di sini, tautan yang belum dikunjungi akan berwarna hijau tanpa garis bawah. Tautan yang dikunjungi akan berwarna merah muda tanpa garis bawah. Tautan yang aktif akan berwarna kuning dan bergaris bawah. Selain itu, saat mengarahkan kursor ke tautan (a:hover), tautan akan berubah menjadi merah dan bergaris bawah:
-
-<style>
-a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
-}
-</style>
-IKLAN
-
-Tombol Tautan
-Sebuah tautan juga dapat diberi gaya seperti tombol, dengan menggunakan CSS:
-
-Ini adalah tautannya
-Contoh
-<style>
-a:link, a:visited {
-  background-color: #f44336;
-  color: white;
-  padding: 15px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-a:hover, a:active {
-  background-color: red;
-}
-</style>
