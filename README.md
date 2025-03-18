@@ -2192,16 +2192,26 @@ Anda juga dapat menambahkan tautan ke penanda halaman di halaman lain:
 <a href="html_demo.html#C4">Jump to Chapter 4</a>
 
 
-ambar HTML
+# Gambar HTML
 Gambar dapat meningkatkan desain dan tampilan halaman web.
 
-Contoh
+## Contoh
 <img src="pic_trulli.jpg" alt="Italian Trulli">
+output
+terdapat gambar italian trulli
+
 Contoh
 <img src="img_girl.jpg" alt="Girl in a jacket">
+output
+terdapat gambar gadis berjaket
+
 Contoh
 <img src="img_chania.jpg" alt="Flowers in Chania">
-Sintaksis Gambar HTML
+output
+terdapat gambar bunga
+
+
+# Sintaksis Gambar HTML
 Tag HTML <img>digunakan untuk menanamkan gambar di halaman web.
 
 Secara teknis, gambar tidak dimasukkan ke dalam halaman web; gambar ditautkan ke halaman web. <img>Tag tersebut menciptakan ruang penyimpanan untuk gambar yang dirujuk.
@@ -2212,43 +2222,72 @@ Tag <img>memiliki dua atribut yang diperlukan:
 
 src - Menentukan jalur ke gambar
 alt - Menentukan teks alternatif untuk gambar
-Sintaksis
+
+## Sintaksis
 <img src="url" alt="alternatetext">
-Atribut src
+
+
+# Atribut src
 Atribut yang diperlukan srcmenentukan jalur (URL) ke gambar.
 
 Catatan: Saat halaman web dimuat, pada saat itulah browser mengambil gambar dari server web dan memasukkannya ke dalam halaman. Oleh karena itu, pastikan gambar benar-benar berada di tempat yang sama dalam kaitannya dengan halaman web, jika tidak, pengunjung Anda akan mendapatkan ikon tautan rusak. Ikon tautan rusak dan altteks akan ditampilkan jika browser tidak dapat menemukan gambar tersebut.
 
-Contoh
+## Contoh
 <img src="img_chania.jpg" alt="Flowers in Chania">
 
-Atribut alt
+output
+Teks alternatif
+Atribut alt harus mencerminkan konten gambar, sehingga pengguna yang tidak dapat melihat gambar dapat memahami apa yang terkandung dalam gambar tersebut:
+
+terdapat gambar sebuah gang
+
+# Atribut alt
 Atribut yang diperlukan altmenyediakan teks alternatif untuk gambar, jika pengguna karena alasan tertentu tidak dapat melihatnya (karena koneksi yang lambat, kesalahan pada atribut src, atau jika pengguna menggunakan pembaca layar).
 
 Nilai altatribut harus menjelaskan gambar:
 
 Contoh
 <img src="img_chania.jpg" alt="Flowers in Chania">
+output
+Teks alternatif
+Atribut alt harus mencerminkan konten gambar, sehingga pengguna yang tidak dapat melihat gambar dapat memahami apa yang terkandung dalam gambar tersebut:
+gambar bunga
+
 Jika browser tidak dapat menemukan gambar, maka browser akan menampilkan nilai alt atribut:
 
 Contoh
 <img src="wrongname.gif" alt="Flowers in Chania">
+
+Jika browser tidak dapat menemukan gambar tersebut, maka akan ditampilkan teks alternatif:
+
+( tidak ada ) Bunga di Chania
+
 Kiat: Pembaca layar adalah program perangkat lunak yang membaca kode HTML, dan memungkinkan pengguna untuk "mendengarkan" kontennya. Pembaca layar berguna bagi orang-orang yang memiliki gangguan penglihatan atau kesulitan belajar.
 
-Ukuran Gambar - Lebar dan Tinggi
+# Ukuran Gambar - Lebar dan Tinggi
 Anda dapat menggunakan styleatribut untuk menentukan lebar dan tinggi gambar.
 
 Contoh
 <img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+output
+Ukuran Gambar
+Di sini kita menggunakan atribut style untuk menentukan lebar dan tinggi gambar:
+gambar perempuan berjaket
+
 Sebagai alternatif, Anda dapat menggunakan atribut widthdan height:
 
 Contoh
 <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+output
+Ukuran Gambar
+Di sini kita menentukan lebar dan tinggi gambar dengan atribut width dan height :
+gambar perempuan berjaket
+
 Atribut widthdan heightselalu menentukan lebar dan tinggi gambar dalam piksel.
 
 Catatan: Selalu tentukan lebar dan tinggi gambar. Jika lebar dan tinggi tidak ditentukan, halaman web mungkin berkedip saat gambar dimuat.
 
-Lebar dan Tinggi, atau Gaya?
+# Lebar dan Tinggi, atau Gaya?
 Atribut width, height, dan stylesemuanya valid dalam HTML.
 
 Namun, kami sarankan untuk menggunakan styleatribut ini. Atribut ini mencegah lembar gaya mengubah ukuran gambar:
@@ -2271,42 +2310,357 @@ img {
 
 </body>
 </html>
-Gambar di Folder Lain
+
+output
+
+# Atribut Lebar/Tinggi atau Gaya?
+Gambar pertama menggunakan atribut lebar (diatur ke 128 piksel), tetapi gaya di bagian kepala menimpanya, dan menetapkan lebar ke 100%.
+
+Ikon HTML5
+Gambar kedua menggunakan atribut style untuk mengatur lebar menjadi 128 piksel, ini tidak akan ditimpa oleh gaya di bagian kepala:
+
+Ikon HTML5
+
+
+# Gambar di Folder Lain
 Jika Anda memiliki gambar di sub-folder, Anda harus menyertakan nama folder dalam srcatribut:
 
 Contoh
 <img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
-Gambar di Server/Situs Web Lain
+
+output
+
+Gambar di Folder Lain
+Umumnya, gambar disimpan dalam sub-folder. Anda harus menyertakan nama folder dalam atribut src:
+
+Ikon HTML5
+
+
+# Gambar di Server/Situs Web Lain
 Beberapa situs web menunjuk ke gambar di server lain.
 
 Untuk menunjuk ke gambar di server lain, Anda harus menentukan URL absolut (lengkap) dalam srcatribut:
 
 Contoh
 <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+output
+Gambar di Server Lain
+W3Schools.com
+
 Catatan tentang gambar eksternal: Gambar eksternal mungkin memiliki hak cipta. Jika Anda tidak memperoleh izin untuk menggunakannya, Anda mungkin melanggar undang-undang hak cipta. Selain itu, Anda tidak dapat mengontrol gambar eksternal; gambar tersebut dapat dihapus atau diubah secara tiba-tiba.
 
-Gambar Animasi
+# Gambar Animasi
 HTML memperbolehkan GIF animasi:
 
 Contoh
 <img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
-Gambar sebagai Tautan
+
+output
+
+HTML memperbolehkan gambar bergerak:
+animasi
+
+# Gambar sebagai Tautan
 Untuk menggunakan gambar sebagai tautan, letakkan <img>tag di dalam <a> tag:
 
 Contoh
 <a href="default.asp">
   <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
 </a>
-Gambar Mengambang
+
+output
+Gambar sebagai Tautan
+Gambar tersebut adalah tautan. Anda dapat mengekliknya.
+
+# Gambar Mengambang
 Gunakan properti CSS floatuntuk membiarkan gambar melayang ke kanan atau ke kiri teks:
 
 Contoh
 <p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
 The image will float to the right of the text.</p>
 
-<p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
-The image will float to the left of the text.</p>
+output
+
+## Gambar Mengambang
+### Letakkan gambar ke kanan:
+
+Wajah tersenyumParagraf dengan gambar mengambang. Paragraf dengan gambar mengambang. Paragraf dengan gambar mengambang.
+
+### Letakkan gambar ke kiri:
+
+Wajah tersenyumParagraf dengan gambar mengambang. Paragraf dengan gambar mengambang. Paragraf dengan gambar mengambang.
+
+
+# Peta Gambar HTML
+Dengan peta gambar HTML, Anda dapat membuat area yang dapat diklik pada gambar.
+
+# Peta Gambar
+Tag HTML <map>mendefinisikan peta gambar. Peta gambar adalah gambar dengan area yang dapat diklik. Area tersebut didefinisikan dengan satu atau beberapa <area>tag.
+
+Cobalah klik komputer, telepon, atau cangkir kopi pada gambar di bawah ini:
+
+Tempat kerja
+Contoh
+Berikut adalah kode sumber HTML untuk peta gambar di atas:
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+
+output
+Peta Gambar
+Klik pada komputer, telepon, atau cangkir kopi untuk membuka halaman baru dan membaca lebih lanjut tentang topik tersebut:
+
+Tempat kerja (dengan gambar komputer)
+
+# Bagaimana cara kerjanya?
+Ide di balik peta gambar adalah Anda harus dapat melakukan tindakan yang berbeda-beda, tergantung pada bagian gambar mana yang Anda klik.
+
+Untuk membuat peta gambar, Anda memerlukan gambar dan beberapa kode HTML yang menjelaskan area yang dapat diklik.
+
+# Gambar
+Gambar disisipkan menggunakan <img>tag. Satu-satunya perbedaan dari gambar lain adalah Anda harus menambahkan usemapatribut:
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+Nilai usemapdiawali dengan tagar #diikuti dengan nama peta gambar, dan digunakan untuk membuat hubungan antara gambar dan peta gambar.
+
+Tips: dapat menggunakan gambar apa pun sebagai peta gambar!
+
+Buat Peta Gambar
+Lalu, tambahkan <map>elemen.
+
+Elemen ini <map>digunakan untuk membuat peta gambar, dan ditautkan ke gambar dengan menggunakan name atribut yang diperlukan:
+
+<map name="workmap">
+Atribut nameharus memiliki nilai yang sama dengan atribut <img>'s usemap.
+
+Daerah
+Lalu, tambahkan area yang dapat diklik.
+
+Area yang dapat diklik didefinisikan menggunakan <area>elemen.
+
+Membentuk
+Anda harus menentukan bentuk area yang dapat diklik, dan Anda dapat memilih salah satu nilai berikut:
+
+rect- mendefinisikan wilayah persegi panjang
+circle- mendefinisikan wilayah melingkar
+poly- mendefinisikan wilayah poligonal
+default- mendefinisikan seluruh wilayah
+Anda juga harus menentukan beberapa koordinat untuk dapat menempatkan area yang dapat diklik pada gambar. 
+
+Bentuk="persegi panjang"
+Koordinat shape="rect"datang berpasangan, satu untuk sumbu x dan satu untuk sumbu y.
+
+Jadi, koordinatnya 34,44terletak 34 piksel dari margin kiri dan 44 piksel dari atas:
+
+Tempat kerja
+Koordinat 270,350terletak 270 piksel dari margin kiri dan 350 piksel dari atas:
+
+Tempat kerja
+Sekarang kita memiliki cukup data untuk membuat area persegi panjang yang dapat diklik:
+
+Contoh
+<area shape="rect" coords="34, 44, 270, 350" href="computer.htm">
+Ini adalah area yang dapat diklik dan akan mengarahkan pengguna ke halaman "computer.htm":
+
+Tempat kerja
+Bentuk="lingkaran"
+Untuk menambahkan area lingkaran, pertama-tama cari koordinat pusat lingkaran:
+
+Tempat kerja
+Kemudian tentukan jari-jari lingkaran:
+
+44piksel
+
+Tempat kerja
+Sekarang Anda memiliki cukup data untuk membuat area melingkar yang dapat diklik:
+
+Contoh
+<area shape="circle" coords="337, 300, 44" href="coffee.htm">
+Ini adalah area yang dapat diklik dan akan mengarahkan pengguna ke halaman "coffee.htm":
+
+Tempat kerja
+Bentuk="poli"
+Berisi shape="poly"beberapa titik koordinat, yang menciptakan bentuk yang dibentuk dengan garis lurus (poligon).
+
+Ini dapat digunakan untuk membuat bentuk apa pun.
+
+Mungkin seperti bentuk croissant!
+
+Bagaimana kita bisa membuat croissant pada gambar di bawah menjadi tautan yang dapat diklik?
+
+Makanan Perancis
+Kita harus menemukan koordinat x dan y untuk semua sisi croissant:
+
+Makanan Perancis
+Koordinat datang berpasangan, satu untuk sumbu x dan satu untuk sumbu y:
+
+Contoh
+<area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="croissant.htm">
+Ini adalah area yang dapat diklik dan akan mengarahkan pengguna ke halaman "croissant.htm":
+
+Makanan Perancis
+Peta Gambar dan JavaScript
+Area yang dapat diklik juga dapat memicu fungsi JavaScript.
+
+Tambahkan clickperistiwa ke <area>elemen untuk menjalankan fungsi JavaScript:
+
+Contoh
+Di sini, kami menggunakan atribut onclick untuk menjalankan fungsi JavaScript saat area diklik:
+
+<map name="workmap">
+  <area shape="circle" coords="337,300,44" href="coffee.htm" onclick="myFunction()">
+</map>
+
+<script>
+function myFunction() {
+  alert("You clicked the coffee cup!");
+}
+</script>
+
+output
+
+Peta Gambar
+Klik pada komputer, telepon, atau cangkir kopi untuk membuka halaman baru dan membaca lebih lanjut tentang topik tersebut:
+
+Tempat kerja (gambar komputer)
+
+
+# Gambar Latar Belakang HTML
+Gambar latar belakang dapat ditentukan untuk hampir semua elemen HTML.
+
+# Gambar Latar Belakang pada elemen HTML
+Untuk menambahkan gambar latar belakang pada elemen HTML, gunakan styleatribut HTML dan properti CSS background-image:
+
+Contoh
+Tambahkan gambar latar belakang pada elemen HTML:
+
+<p style="background-image: url('img_girl.jpg');">
+
+
+ output
+ Gambar Latar Belakang
+Gambar latar belakang untuk elemen ap:
+
+Anda dapat menentukan gambar latar belakang
+untuk setiap elemen HTML yang terlihat.
+Dalam contoh ini, gambar latar belakang
+ditentukan untuk elemen ap.
+Secara default, gambar latar belakang
+akan berulang ke arah
+yang lebih kecil daripada elemen
+tempat gambar tersebut ditentukan. (Coba ubah ukuran
+jendela browser untuk melihat bagaimana
+gambar latar belakang berperilaku)
+
+
+Anda juga dapat menentukan gambar latar belakang dalam <style> elemen, di <head> bagian:
+
+Contoh
+Tentukan gambar latar belakang dalam <style> elemen:
+
+<style>
+p {
+  background-image: url('img_girl.jpg');
+}
+</style>
+
+output
+Background Image
+By default, the background image will repeat itself if it is smaller than the element where it is specified, in this case the body element  ( setengah badan)
+
+
+Gambar Latar Belakang pada Halaman
+Jika Anda ingin seluruh halaman memiliki gambar latar belakang, Anda harus menentukan gambar latar belakang pada <body>elemen:
+
+Contoh
+Tambahkan gambar latar belakang untuk seluruh halaman:
+
+<style>
+body {
+  background-image: url('img_girl.jpg');
+}
+</style>
+
+output
+gambar Latar Belakang
+Secara default, gambar latar belakang akan berulang jika lebih kecil dari elemen tempat ia ditentukan, dalam hal ini elemen badan.
 
 
 
+# gambar Latar Belakang Ulangi
+Jika gambar latar belakang lebih kecil dari elemen, gambar akan berulang, secara horizontal dan vertikal, hingga mencapai akhir elemen:
 
+Contoh
+<style>
+body {
+  background-image: url('example_img_girl.jpg');
+}
+</style> 
+
+output
+Gambar Latar Belakang
+Secara default, gambar latar belakang akan berulang jika lebih kecil dari elemen tempat ia ditentukan, dalam hal ini elemen badan.
+
+Untuk mencegah gambar latar belakang terulang kembali, atur background-repeatproperti ke no-repeat.
+
+Contoh
+<style>
+body {
+  background-image: url('example_img_girl.jpg');
+  background-repeat: no-repeat;
+}
+</style>
+
+output
+Latar Belakang Tidak Ada Pengulangan
+Anda dapat mencegah gambar diulang dengan menyetel properti background-repeat ke "no-repeat".
+
+
+# Sampul Latar Belakang
+Jika Anda ingin gambar latar belakang menutupi seluruh elemen, Anda dapat mengatur background-sizeproperti ke cover.
+
+Selain itu, untuk memastikan seluruh elemen selalu tercakup, atur background-attachmentproperti kefixed:
+
+Dengan cara ini, gambar latar belakang akan menutupi seluruh elemen, tanpa peregangan (gambar akan mempertahankan proporsi aslinya):
+
+Contoh
+<style>
+body {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+output
+
+Sampul Latar Belakang
+Tetapkan properti ukuran latar belakang ke "penutup" dan gambar latar belakang akan menutupi seluruh elemen, dalam hal ini elemen badan.
+
+
+# Peregangan Latar Belakang
+Jika Anda ingin gambar latar belakang meregang agar sesuai dengan seluruh elemen, Anda dapat mengatur background-sizeproperti menjadi 100% 100%:
+
+Coba ubah ukuran jendela browser, dan Anda akan melihat bahwa gambar akan meregang, tetapi selalu menutupi seluruh elemen.
+
+Contoh
+<style>
+body {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+
+output
+
+# Peregangan Latar Belakang
+Atur properti ukuran latar belakang ke "100% 100%" dan gambar latar belakang akan diregangkan untuk menutupi seluruh elemen, dalam hal ini elemen badan.
