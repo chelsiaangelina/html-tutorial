@@ -2093,3 +2093,220 @@ A link styled as a button:
 
 This is a link ( bentuk table)
 
+
+# Tautan HTML - Buat Bookmark
+Tautan HTML dapat digunakan untuk membuat penanda halaman, sehingga pembaca dapat melompat ke bagian tertentu pada halaman web.
+
+# Membuat Bookmark dalam HTML
+Bookmark dapat berguna jika halaman web sangat panjang.
+
+Untuk membuat penanda buku - pertama buat penanda buku, lalu tambahkan tautan ke dalamnya.
+
+Ketika tautan diklik, halaman akan bergulir ke bawah atau ke atas ke lokasi yang terdapat penanda halaman.
+
+## contoh
+Pertama, gunakan idatribut untuk membuat bookmark:
+
+<h2 id="C4">Chapter 4</h2>
+Kemudian, tambahkan tautan ke penanda buku ("Lompat ke Bab 4"), dari dalam halaman yang sama:
+
+Contoh
+<a href="#C4">Jump to Chapter 4</a>
+
+output
+
+Lompat ke Bab 4
+
+Lompat ke Bab 10
+
+Bab 1
+Bab ini menjelaskan ba bla bla
+
+Bab 2
+Bab ini menjelaskan ba bla bla
+
+Bab 3
+Bab ini menjelaskan ba bla bla
+
+Bab 4
+Bab ini menjelaskan ba bla bla
+
+Bab 5
+Bab ini menjelaskan ba bla bla
+
+Bab 6
+Bab ini menjelaskan ba bla bla
+
+Bab 7
+Bab ini menjelaskan ba bla bla
+
+Bab 8
+Bab ini menjelaskan ba bla bla
+
+Bab 9
+Bab ini menjelaskan ba bla bla
+
+Bab 10
+Bab ini menjelaskan ba bla bla
+
+Bab 11
+Bab ini menjelaskan ba bla bla
+
+Bab 12
+Bab ini menjelaskan ba bla bla
+
+Bab 13
+Bab ini menjelaskan ba bla bla
+
+Bab 14
+Bab ini menjelaskan ba bla bla
+
+Bab 15
+Bab ini menjelaskan ba bla bla
+
+Bab 16
+Bab ini menjelaskan ba bla bla
+
+Bab 17
+Bab ini menjelaskan ba bla bla
+
+Bab 18
+Bab ini menjelaskan ba bla bla
+
+Bab 19
+Bab ini menjelaskan ba bla bla
+
+Bab 20
+Bab ini menjelaskan ba bla bla
+
+Bab 21
+Bab ini menjelaskan ba bla bla
+
+Bab 22
+Bab ini menjelaskan ba bla bla
+
+Bab 23
+Bab ini menjelaskan ba bla bla
+Anda juga dapat menambahkan tautan ke penanda halaman di halaman lain:
+
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+
+
+ambar HTML
+Gambar dapat meningkatkan desain dan tampilan halaman web.
+
+Contoh
+<img src="pic_trulli.jpg" alt="Italian Trulli">
+Contoh
+<img src="img_girl.jpg" alt="Girl in a jacket">
+Contoh
+<img src="img_chania.jpg" alt="Flowers in Chania">
+Sintaksis Gambar HTML
+Tag HTML <img>digunakan untuk menanamkan gambar di halaman web.
+
+Secara teknis, gambar tidak dimasukkan ke dalam halaman web; gambar ditautkan ke halaman web. <img>Tag tersebut menciptakan ruang penyimpanan untuk gambar yang dirujuk.
+
+Tag tersebut <img>kosong, hanya berisi atribut dan tidak memiliki tag penutup.
+
+Tag <img>memiliki dua atribut yang diperlukan:
+
+src - Menentukan jalur ke gambar
+alt - Menentukan teks alternatif untuk gambar
+Sintaksis
+<img src="url" alt="alternatetext">
+Atribut src
+Atribut yang diperlukan srcmenentukan jalur (URL) ke gambar.
+
+Catatan: Saat halaman web dimuat, pada saat itulah browser mengambil gambar dari server web dan memasukkannya ke dalam halaman. Oleh karena itu, pastikan gambar benar-benar berada di tempat yang sama dalam kaitannya dengan halaman web, jika tidak, pengunjung Anda akan mendapatkan ikon tautan rusak. Ikon tautan rusak dan altteks akan ditampilkan jika browser tidak dapat menemukan gambar tersebut.
+
+Contoh
+<img src="img_chania.jpg" alt="Flowers in Chania">
+
+Atribut alt
+Atribut yang diperlukan altmenyediakan teks alternatif untuk gambar, jika pengguna karena alasan tertentu tidak dapat melihatnya (karena koneksi yang lambat, kesalahan pada atribut src, atau jika pengguna menggunakan pembaca layar).
+
+Nilai altatribut harus menjelaskan gambar:
+
+Contoh
+<img src="img_chania.jpg" alt="Flowers in Chania">
+Jika browser tidak dapat menemukan gambar, maka browser akan menampilkan nilai alt atribut:
+
+Contoh
+<img src="wrongname.gif" alt="Flowers in Chania">
+Kiat: Pembaca layar adalah program perangkat lunak yang membaca kode HTML, dan memungkinkan pengguna untuk "mendengarkan" kontennya. Pembaca layar berguna bagi orang-orang yang memiliki gangguan penglihatan atau kesulitan belajar.
+
+Ukuran Gambar - Lebar dan Tinggi
+Anda dapat menggunakan styleatribut untuk menentukan lebar dan tinggi gambar.
+
+Contoh
+<img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+Sebagai alternatif, Anda dapat menggunakan atribut widthdan height:
+
+Contoh
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+Atribut widthdan heightselalu menentukan lebar dan tinggi gambar dalam piksel.
+
+Catatan: Selalu tentukan lebar dan tinggi gambar. Jika lebar dan tinggi tidak ditentukan, halaman web mungkin berkedip saat gambar dimuat.
+
+Lebar dan Tinggi, atau Gaya?
+Atribut width, height, dan stylesemuanya valid dalam HTML.
+
+Namun, kami sarankan untuk menggunakan styleatribut ini. Atribut ini mencegah lembar gaya mengubah ukuran gambar:
+
+Contoh
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  width: 100%;
+}
+</style>
+</head>
+<body>
+
+<img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+
+<img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+</body>
+</html>
+Gambar di Folder Lain
+Jika Anda memiliki gambar di sub-folder, Anda harus menyertakan nama folder dalam srcatribut:
+
+Contoh
+<img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+Gambar di Server/Situs Web Lain
+Beberapa situs web menunjuk ke gambar di server lain.
+
+Untuk menunjuk ke gambar di server lain, Anda harus menentukan URL absolut (lengkap) dalam srcatribut:
+
+Contoh
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+Catatan tentang gambar eksternal: Gambar eksternal mungkin memiliki hak cipta. Jika Anda tidak memperoleh izin untuk menggunakannya, Anda mungkin melanggar undang-undang hak cipta. Selain itu, Anda tidak dapat mengontrol gambar eksternal; gambar tersebut dapat dihapus atau diubah secara tiba-tiba.
+
+Gambar Animasi
+HTML memperbolehkan GIF animasi:
+
+Contoh
+<img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+Gambar sebagai Tautan
+Untuk menggunakan gambar sebagai tautan, letakkan <img>tag di dalam <a> tag:
+
+Contoh
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+Gambar Mengambang
+Gunakan properti CSS floatuntuk membiarkan gambar melayang ke kanan atau ke kiri teks:
+
+Contoh
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+The image will float to the right of the text.</p>
+
+<p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+The image will float to the left of the text.</p>
+
+
+
+
