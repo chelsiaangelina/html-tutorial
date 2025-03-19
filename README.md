@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/22469a02-3a61-43b9-84b1-88410b668fa9)# html-tutorial
+# html-tutorial
 html adalah bahasa markup standar untuk halaman web
 dengan html kita dapat mebuat web kita sendiri
 **contoh**
@@ -138,7 +138,7 @@ Tulis atau salin kode HTML berikut ke Notepad:
 
 <p>My first paragraph.</p>
 
-</body>
+`</body>
 </html>
 
 **Langkah 3: Simpan Halaman HTML**
@@ -822,43 +822,11 @@ Properti adalah properti CSS. Nilai adalah nilai CSS .
 
 # Warna Latar Belakang
 Properti CSS background-colormendefinisikan warna latar belakang untuk elemen HTML.
-
-Contoh
-Mengatur warna latar belakang halaman menjadi biru muda:
-
-<body style="background-color:powderblue;">
-
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-
-</body>
-
-output
-This is a heading
-This is a paragraph.
-(latar biru) 
-
-Contoh
-Mengatur warna latar belakang untuk dua elemen berbeda:
-
-<body>
-
-<h1 style="background-color:powderblue;">This is a heading</h1>
-<p style="background-color:tomato;">This is a paragraph.</p>
-
-</body>
-
-output
 # This is a heading (warna biru)
 This is a paragraph.(warna oren)
 # Warna Teks
 Properti CSS colormendefinisikan warna teks untuk elemen HTML:
 
-Contoh
-<h1 style="color:blue;">This is a heading</h1>
-<p style="color:red;">This is a paragraph.</p>
-
-output
  # This is a heading (warna biru)
 This is a paragraph. (warna merah)
 
@@ -1010,10 +978,10 @@ My favorite color is blue red.
 
 
 # Elemen HTML <ins>
-Elemen HTML <ins>mendefinisikan teks yang telah disisipkan ke dalam dokumen. Peramban biasanya akan menggarisbawahi teks yang disisipkan:
+Elemen HTML ins>mendefinisikan teks yang telah disisipkan ke dalam dokumen. Peramban biasanya akan menggarisbawahi teks yang disisipkan:
 
 Contoh
-<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+<p>My favorite color is del>blue</del <ins>red</ins>.</p>
 
 output
 My favorite color is blue red.
