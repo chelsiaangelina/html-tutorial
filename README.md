@@ -1,6 +1,7 @@
 # html-tutorial
 html adalah bahasa markup standar untuk halaman web
 dengan html kita dapat mebuat web kita sendiri
+
 **contoh**
 <!DOCTYPE html
 
@@ -65,13 +66,6 @@ elemen HTML adalah segalanya dari tag awal hingga tag akhir
 <h1> judul pertama </h1>
 <p> paragraf pertama </p>
 
-artinya 
-Start tag                    Elemen contect                End tag
-<h1>                         My Firsh Heading               </h1>
-
-<p>                          My firsh Paragraf              </P>
-
-<br>                         none                           none
 
 ## peramban Web ##
 tujuan peramban web (Chrome, Edge, Firefox, Safari) adalah untuk membaca dokumen HTML dan menampilkan nya dengan benar. 
@@ -100,15 +94,6 @@ konten di dalam elemen <title> akan ditampilkan di bilah judul browser atau di t
 
 # Editor HTML #
 Editor teks sederhana adalah semua hal yang diperlukan ketika mempelajari HTML. 
-
-Pelajari HTML Menggunakan Notepad atau TextEdit
-Halaman web dapat dibuat dan dimodifikasi menggunakan editor HTML profesional.
-
-Namun, untuk mempelajari HTML kami merekomendasikan editor teks sederhana seperti Notepad (PC) atau TextEdit (Mac).
-
-Kami percaya bahwa menggunakan editor teks sederhana adalah cara yang baik untuk mempelajari HTML.
-
-Ikuti langkah-langkah di bawah ini untuk membuat halaman web pertama Anda dengan Notepad atau TextEdit.
 
 **Langkah 1: Buka Notepad (PC)**
 Windows 8 atau lebih baru:
@@ -155,27 +140,16 @@ Hasilnya akan terlihat seperti ini:
 **My Firsh Heading**
 My firsh Paragraf
 
+
+
+
+
+
 # contoh dasar HTML # 
 ## Dokumen HTMLM ##
 Semua dokumen HTML harus dimulai dengan deklarasi tipe dokumen: <!DOCTYPE html>.
 
-Dokumen HTML itu sendiri dimulai dengan <html>dan diakhiri dengan </html>.
 
-Bagian yang terlihat dari dokumen HTML berada di antara <body>dan </body>.
-
-CONTOH:
-<!DOCTYPE html>
-<html>
-<body>
-
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
-</body>
-</html>
-
-
-OUTPUT 
 **My First Heading**
 My First paragraf
 
